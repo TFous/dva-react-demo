@@ -15,7 +15,12 @@
            "target": "http://localhost:3000",
            "changeOrigin": false,
            "pathRewrite": { "^/api" : "" }
-         }
+         },
+   "/list": {
+          "target": "http://localhost:3001",
+          "changeOrigin": false,
+          "pathRewrite": { "^/list" : "" }
+        }
   },
   "extraBabelPlugins": [
     "transform-runtime",

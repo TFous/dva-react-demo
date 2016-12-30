@@ -13,7 +13,7 @@ server.listen(3000, function () {
 
 
 const server1 = jsonServer.create();
-const router1 = jsonServer.router('./src/data/dbd.json');
+const router1 = jsonServer.router('./src/data/db_list.json');
 const middlewares1 = jsonServer.defaults();
 
 server1.use(middlewares1);

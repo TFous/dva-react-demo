@@ -9,6 +9,9 @@ function Header({ location }) {
       mode="horizontal"
       theme="dark"
     >
+      <Menu.Item key="/list">
+        <Link to="/list"><Icon type="bars" />list</Link>
+      </Menu.Item>
       <Menu.Item key="/users">
         <Link to="/users"><Icon type="bars" />Users</Link>
       </Menu.Item>

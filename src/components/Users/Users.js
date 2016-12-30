@@ -29,6 +29,7 @@ function Users({ dispatch, list: dataSource, loading, total, page: current }) {
   }
 
   function createHandler(values) {
+    console.log(values);
     dispatch({
       type: 'users/create',
       payload: values,
@@ -97,6 +98,9 @@ function Users({ dispatch, list: dataSource, loading, total, page: current }) {
 
 function mapStateToProps(state) {
   const { list, total, page } = state.users;
+  console.log(list)
+  console.log(total)
+  console.log(page)
   return {
     loading: state.loading.models.users,
     list,
