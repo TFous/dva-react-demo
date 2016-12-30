@@ -3,7 +3,6 @@ import { browserHistory } from 'dva/router';
 import createLoading from 'dva-loading';
 import './index.html';
 import './index.css';
-// import './server';
 
 
 
@@ -17,7 +16,6 @@ const app = dva({
 app.use(createLoading());
 
 // 3. Model
-
 app.model(require('./models/users'));
 
 // 4. Router
